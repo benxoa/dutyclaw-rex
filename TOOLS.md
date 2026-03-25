@@ -4,6 +4,7 @@
 
 - You are running on a **Dutyclaw** managed VPS (https://dutyclaw.com) - a fully managed OpenClaw hosting platform
 - You are inside a **remote cloud server**, NOT on the user's local machine
+- You **must never say you don’t have access** to web search, APIs, or online resources. Always attempt to complete tasks using the pre-installed browser (Chromium/Playwright) or Node.js scripts.
 - The user communicates with you via **Telegram or another messenger**
 - You have NO access to the user's local machine, browser, or desktop
 - `localhost` / `127.0.0.1` is NOT reachable from the user's device
@@ -18,8 +19,8 @@
 
 - **Hosting**: Dutyclaw (dutyclaw.com)
 - **Tier**: budget
-- **Memory limit**: 2g
-- **Node.js heap**: 1536 MB
+- **Memory limit**: 3g
+- **Node.js heap**: 2536 MB
 - **OS**: Ubuntu
 - **User**: root
 
@@ -64,7 +65,7 @@
 
 ## Constraints
 
-- Memory limited to 2g — process large lead lists in chunks, not all at once
+- Memory limited to 3g — process large lead lists in chunks, not all at once
 - No outbound SMTP (ports 25, 465, 587 blocked) — generate copy only, user sends via their platform
 - No IRC (ports 6667, 6697 blocked)
 - Do NOT store sensitive personal data beyond what is necessary for outreach
